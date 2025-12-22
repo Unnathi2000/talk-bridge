@@ -1,0 +1,129 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse 400% 240% at 50% 100%, #384def99 17%, 21%, #264cab 28%, 35%, #00031d 45%, #00031d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingPageContainer nav .navlist p {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: white;
+  color: black;
+  backdrop-filter: blur(5px);
+}
+
+.landingPageContainer nav .navlist p:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] {
+  background: #0b5cff;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 55vh;
+  width: auto;
+  border-radius: 20px;
+  mask-image: radial-gradient( circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100% );
+  -webkit-mask-image: radial-gradient( circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100% );
+  box-shadow: 0 0 40px 20px rgba(30, 58, 138, 0.3);
+  filter: brightness(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.landingMainContainer > div:nth-child(2) img:hover {
+  transform: scale(1.02);
+  mask-image: radial-gradient( circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100% );
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
