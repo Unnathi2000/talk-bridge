@@ -1,11 +1,10 @@
-/* 1. Global Reset & Box Model */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. Main Layout Container */
 .landingPageContainer {
   width: 100%;
   min-height: 100vh; /* Ensures background covers everything even if content scrolls */
@@ -18,7 +17,6 @@
   flex-direction: column;
 }
 
-/* 3. Responsive Navbar */
 .landingPageContainer nav {
   width: 100%;
   padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 5rem);
@@ -61,7 +59,7 @@
   transform: translateY(-2px);
 }
 
-/* 4. Responsive Main Hero Section */
+
 .landingMainContainer {
   flex: 1;
   display: flex;
@@ -73,7 +71,6 @@
   text-align: center;
 }
 
-/* 5. Left Panel (Text Content) */
 .landingMainContainer > div:nth-child(1) {
   width: 100%;
   max-width: 800px;
